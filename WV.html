@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WV Home Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light gray background */
+            color: #333; /* Dark text for readability */
+        }
+        header {
+            background-color: #2E3B55; /* Dark Blue */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FF6F61; /* Hover color (Peachy Red) */
+        }
+        #hero {
+            background: linear-gradient(to right, #FF6F61, #FF9A8B); /* Warm gradient */
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        #hero h2 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        #hero .cta-button {
+            background-color: #FF6F61; /* Peachy Red */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        #hero .cta-button:hover {
+            background-color: #e85c50; /* Darker Peach */
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            color: #2E3B55; /* Dark Blue */
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .services-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            flex: 1 1 calc(30% - 20px);
+            padding: 20px;
+            text-align: center;
+            background: #f3f4f6; /* Light gray background for services */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+        .service-item h3 {
+            color: #FF6F61; /* Peachy Red for service title */
+            font-size: 1.5rem;
+        }
+        .service-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+        #blog article {
+            margin: 20px 0;
+        }
+        #blog article h3 {
+            color: #2E3B55; /* Dark Blue */
+            font-size: 1.4rem;
+        }
+        #blog article p {
+            font-size: 1rem;
+            color: #555;
+        }
+        #blog article a {
+            color: #FF6F61; /* Peachy Red */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #blog article a:hover {
+            color: #e85c50; /* Darker Peach on hover */
+        }
+        #business-hours, #follow-us {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form label {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        form input, form select, form textarea, form button {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #2E3B55; /* Dark Blue */
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #1d2a3d; /* Darker Blue */
+        }
+        #chat button {
+            background-color: #FF6F61; /* Peachy Red */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        #chat button:hover {
+            background-color: #e85c50; /* Darker Peach */
+        }
+        footer {
+            background-color: #2E3B55; /* Dark Blue */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WV Home Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Your Trusted Partner for Home Services</h2>
+        <p>Plumbing, HVAC, Electrical Maintenance, and More</p>
+        <a href="#request-service" class="cta-button">Request Service</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Plumbing</h3>
+                <p>Expert plumbing solutions for your home.</p>
+            </div>
+            <div class="service-item">
+                <h3>HVAC</h3>
+                <p>Reliable heating and cooling services.</p>
+            </div>
+            <div class="service-item">
+                <h3>Electrical Maintenance</h3>
+                <p>Professional electrical repair and maintenance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At WV Home Services, we are committed to providing top-notch home maintenance solutions. Our experienced team ensures your home is always in perfect condition.</p>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>5 Tips for Maintaining Your HVAC System</h3>
+            <p>Regular maintenance is key to a long-lasting HVAC system. Learn more about our expert tips...</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Common Plumbing Issues and How to Fix Them</h3>
+            <p>Plumbing problems can disrupt your daily routine. Here are some common issues and solutions...</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <section id="business-hours">
+        <h2>Business Hours</h2>
+        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 3:00 PM</p>
+        <p>Sunday: Closed</p>
+    </section>
+
+    <section id="follow-us">
+        <h2>Follow Us</h2>
+        <p>Stay connected with us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </section>
+
+    <section id="request-service">
+        <h2>Request Service</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Service Needed:</label>
+            <select id="service" name="service">
+                <option value="plumbing">Plumbing</option>
+                <option value="hvac">HVAC</option>
+                <option value="electrical">Electrical Maintenance</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="chat">
+        <h2>Let Us Chat</h2>
+        <button onclick="startChat()">Chat with Us</button>
+        <script>
+            function startChat() {
+                alert('Chat functionality coming soon!');
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WV Home Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
