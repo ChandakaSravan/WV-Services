@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravan Chandaka - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2c3e50;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #2980b9;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ecf0f1;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #34495e;
+            text-align: left;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            background-color: #3498db;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #2980b9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            color: white;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            background-color: #1abc9c;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 50px 20px;
+            background-color: #34495e;
+            color: white;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-grid div {
+            background-color: #2c3e50;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="SravanChandaka.jpg" alt="Sravan Chandaka">
+        <h1>Sravan Chandaka</h1>
+        <p>chandakasravan@gmail.com | (469) 773-1868 | Dallas, TX</p>
+        <p><a href="https://linkedin.com/in/sravan-chandaka" style="color: #1abc9c;">LinkedIn Profile</a></p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Professional Portfolio</h1>
+        <p>DevOps Engineer | Full Stack Developer | Cloud Enthusiast</p>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <p>
+                I am a seasoned professional in the field of DevOps and Full Stack Development, with extensive experience
+                in designing, implementing, and maintaining scalable systems. My passion for technology drives me to
+                continuously learn and apply new skills in real-world scenarios. Over the years, I have developed a strong
+                foundation in various programming languages, frameworks, and tools that allow me to deliver high-quality
+                solutions tailored to the needs of my clients and employers.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="content">
+            <h3>TATA Consultancy Services, Kolkata, West Bengal, India</h3>
+            <p><strong>DevOps Engineer (Transamerica, US)</strong> - August 2018 – May 2022</p>
+            <ul>
+                <li>Leveraged DevOps technologies, executed Agile methodologies, and adhered to SDLC frameworks.</li>
+                <li>Collaborated on DevOps initiatives using Docker, Ansible, Harbor, Prometheus, Jenkins, and Octopus Deployment.</li>
+                <li>Deployed over 15 microservices, including Java, Python, Hadoop, HTML, and JavaScript applications.</li>
+                <li>Authored YAML playbooks and automation scripts for Jenkins CI/CD pipelines and deployed to UAT and SIT environments.</li>
+                <li>Specialized in Configuration Management (CR/CM) and server patching.</li>
+                <li>Automated the transfer of artifacts from offshore to onshore and managed domain deployments for both staging and production environments.</li>
+                <li>Awards: Star of the Quarter Award (Q4 2021), Service Commitment Award (Jun 2021), Star Team Award, Best Team recognition (Aug 2019), On the Spot Award (Jul 2021).</li>
+                <li>Devised DevOps automation scripts in remote staging and production support environments.</li>
+            </ul>
+
+            <h3>MOTTO Systems, Hyderabad, TG, India</h3>
+            <p><strong>Full Stack Developer</strong> - June 2017 – December 2017</p>
+            <ul>
+                <li>Executed web application and database design implementation using .Net technologies.</li>
+                <li>Developed a system to disseminate job notifications to users through affiliated consultancies.</li>
+                <li>Facilitated employee applications via portal and ensured efficient communication through notification systems.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+            <!-- Start of Project Cards -->
+
+            <div class="project-card">
+                <img src="bitcoin-prediction.jpg" alt="Bitcoin Prediction Model">
+                <h3>Bitcoin Prediction Model</h3>
+                <p>Developed a Bitcoin value prediction model using Machine Learning (ML) algorithms, achieving an efficiency rate of 80%-85%.</p>
+                <a href="https://github.com/ChandakaSravan/Bitcoin-Prediction" style="color: white;">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>MyProfile</h3>
+                <p>A portfolio showcasing my professional and academic achievements.</p>
+                <a href="https://github.com/ChandakaSravan/MyProfile" style="color: white;">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>CV_FACERECOGNIZATION</h3>
+                <p>Face recognition system implemented using state-of-the-art techniques.</p>
+                <a href="https://github.com/ChandakaSravan/CV_FACERECOGNIZATION" style="color: white;">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>CV_PROJECTS</h3>
+                <p>Collection of various computer vision projects.</p>
+                <a href="https://github.com/ChandakaSravan/CV_PROJECTS" style="color: white;">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+            <div>Email: <a href="mailto:chandakasravan@gmail.com">chandakasravan@gmail.com</a></div>
+            <div>Phone: (469) 773-1868</div>
+            <div>Location: Dallas, TX</div>
+            <div>LinkedIn: <a href="https://linkedin.com/in/sravan-chandaka">linkedin.com/in/sravan-chandaka</a></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sravan Chandaka. All rights reserved. | <a href="mailto:chandakasravan@gmail.com">Contact Me</a></p>
+    </footer>
+
+</body>
+
+</html>
