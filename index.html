@@ -1,305 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sravan Chandaka - Portfolio</title>
+    <title>WV Home Services</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f9f9f9; /* Light gray background */
+            color: #333; /* Dark text for readability */
         }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header Section */
         header {
-            background-color: #34495e;
+            background-color: #2E3B55; /* Dark Blue */
             color: white;
-            padding: 20px 0;
+            padding: 30px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-top: 10px;
-        }
-
-        /* Navigation Bar */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #2c3e50;
-        }
-
-        nav a {
-            color: white;
-            padding: 15px 20px;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #1abc9c;
-        }
-
-        /* Hero Section */
-        .hero {
-            background-color: #2980b9;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-            background-image: url('hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero h1 {
-            font-size: 3em;
+        header h1 {
+            font-size: 2.5rem;
             margin: 0;
         }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.5;
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
         }
-
-        /* Section Styles */
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-            background-color: #ecf0f1;
+        nav ul li {
+            margin: 0 15px;
         }
-
-        .section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #34495e;
-            text-align: left;
-        }
-
-        /* Projects Section */
-        .projects-section {
-            background-color: #3498db;
+        nav ul li a {
             color: white;
-            padding: 50px 20px;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project-card {
-            background-color: #2980b9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            color: white;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            background-color: #1abc9c;
-        }
-
-        .project-card img {
-            width: 100%;
-            border-radius: 8px;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-
-        .project-card h3 {
-            margin: 15px 0;
-            font-size: 1.5em;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            padding: 50px 20px;
-            background-color: #34495e;
-            color: white;
-        }
-
-        .contact-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .contact-grid div {
-            background-color: #2c3e50;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 1.2em;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer a {
-            color: #1abc9c;
             text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
         }
-
+        nav ul li a:hover {
+            color: #FF6F61; /* Hover color (Peachy Red) */
+        }
+        #hero {
+            background: linear-gradient(to right, #FF6F61, #FF9A8B); /* Warm gradient */
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        #hero h2 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        #hero .cta-button {
+            background-color: #FF6F61; /* Peachy Red */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        #hero .cta-button:hover {
+            background-color: #e85c50; /* Darker Peach */
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            color: #2E3B55; /* Dark Blue */
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .services-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            flex: 1 1 calc(30% - 20px);
+            padding: 20px;
+            text-align: center;
+            background: #f3f4f6; /* Light gray background for services */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+        .service-item h3 {
+            color: #FF6F61; /* Peachy Red for service title */
+            font-size: 1.5rem;
+        }
+        .service-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+        #blog article {
+            margin: 20px 0;
+        }
+        #blog article h3 {
+            color: #2E3B55; /* Dark Blue */
+            font-size: 1.4rem;
+        }
+        #blog article p {
+            font-size: 1rem;
+            color: #555;
+        }
+        #blog article a {
+            color: #FF6F61; /* Peachy Red */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #blog article a:hover {
+            color: #e85c50; /* Darker Peach on hover */
+        }
+        #business-hours, #follow-us {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form label {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        form input, form select, form textarea, form button {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #2E3B55; /* Dark Blue */
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #1d2a3d; /* Darker Blue */
+        }
+        #chat button {
+            background-color: #FF6F61; /* Peachy Red */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        #chat button:hover {
+            background-color: #e85c50; /* Darker Peach */
+        }
+        footer {
+            background-color: #2E3B55; /* Dark Blue */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
         footer a:hover {
-            color: #fff;
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
-
     <header>
-        <img src="SravanChandaka.jpg" alt="Sravan Chandaka">
-        <h1>Sravan Chandaka</h1>
-        <p>chandakasravan@gmail.com | (469) 773-1868 | Dallas, TX</p>
-        <p><a href="https://linkedin.com/in/sravan-chandaka" style="color: #1abc9c;">LinkedIn Profile</a></p>
+        <h1>WV Home Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section class="hero" id="home">
-        <h1>Welcome to My Professional Portfolio</h1>
-        <p>DevOps Engineer | Full Stack Developer | Cloud Enthusiast</p>
+    <section id="hero">
+        <h2>Your Trusted Partner for Home Services</h2>
+        <p>Plumbing, HVAC, Electrical Maintenance, and More</p>
+        <a href="#request-service" class="cta-button">Request Service</a>
     </section>
 
-    <section class="section" id="about">
-        <h2>About Me</h2>
-        <div class="content">
-            <p>
-                I am a seasoned professional in the field of DevOps and Full Stack Development, with extensive experience
-                in designing, implementing, and maintaining scalable systems. My passion for technology drives me to
-                continuously learn and apply new skills in real-world scenarios. Over the years, I have developed a strong
-                foundation in various programming languages, frameworks, and tools that allow me to deliver high-quality
-                solutions tailored to the needs of my clients and employers.
-            </p>
-        </div>
-    </section>
-
-    <section class="section" id="experience">
-        <h2>Experience</h2>
-        <div class="content">
-            <h3>TATA Consultancy Services, Kolkata, West Bengal, India</h3>
-            <p><strong>DevOps Engineer (Transamerica, US)</strong> - August 2018 – May 2022</p>
-            <ul>
-                <li>Leveraged DevOps technologies, executed Agile methodologies, and adhered to SDLC frameworks.</li>
-                <li>Collaborated on DevOps initiatives using Docker, Ansible, Harbor, Prometheus, Jenkins, and Octopus Deployment.</li>
-                <li>Deployed over 15 microservices, including Java, Python, Hadoop, HTML, and JavaScript applications.</li>
-                <li>Authored YAML playbooks and automation scripts for Jenkins CI/CD pipelines and deployed to UAT and SIT environments.</li>
-                <li>Specialized in Configuration Management (CR/CM) and server patching.</li>
-                <li>Automated the transfer of artifacts from offshore to onshore and managed domain deployments for both staging and production environments.</li>
-                <li>Awards: Star of the Quarter Award (Q4 2021), Service Commitment Award (Jun 2021), Star Team Award, Best Team recognition (Aug 2019), On the Spot Award (Jul 2021).</li>
-                <li>Devised DevOps automation scripts in remote staging and production support environments.</li>
-            </ul>
-
-            <h3>MOTTO Systems, Hyderabad, TG, India</h3>
-            <p><strong>Full Stack Developer</strong> - June 2017 – December 2017</p>
-            <ul>
-                <li>Executed web application and database design implementation using .Net technologies.</li>
-                <li>Developed a system to disseminate job notifications to users through affiliated consultancies.</li>
-                <li>Facilitated employee applications via portal and ensured efficient communication through notification systems.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="projects-section" id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-
-            <!-- Start of Project Cards -->
-
-            <div class="project-card">
-                <img src="bitcoin-prediction.jpg" alt="Bitcoin Prediction Model">
-                <h3>Bitcoin Prediction Model</h3>
-                <p>Developed a Bitcoin value prediction model using Machine Learning (ML) algorithms, achieving an efficiency rate of 80%-85%.</p>
-                <a href="https://github.com/ChandakaSravan/Bitcoin-Prediction" style="color: white;">View Project</a>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Plumbing</h3>
+                <p>Expert plumbing solutions for your home.</p>
             </div>
-
-            <div class="project-card">
-                <h3>MyProfile</h3>
-                <p>A portfolio showcasing my professional and academic achievements.</p>
-                <a href="https://github.com/ChandakaSravan/MyProfile" style="color: white;">View Project</a>
+            <div class="service-item">
+                <h3>HVAC</h3>
+                <p>Reliable heating and cooling services.</p>
             </div>
-
-            <div class="project-card">
-                <h3>CV_FACERECOGNIZATION</h3>
-                <p>Face recognition system implemented using state-of-the-art techniques.</p>
-                <a href="https://github.com/ChandakaSravan/CV_FACERECOGNIZATION" style="color: white;">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>CV_PROJECTS</h3>
-                <p>Collection of various computer vision projects.</p>
-                <a href="https://github.com/ChandakaSravan/CV_PROJECTS" style="color: white;">View Project</a>
+            <div class="service-item">
+                <h3>Electrical Maintenance</h3>
+                <p>Professional electrical repair and maintenance.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-grid">
-            <div>Email: <a href="mailto:chandakasravan@gmail.com">chandakasravan@gmail.com</a></div>
-            <div>Phone: (469) 773-1868</div>
-            <div>Location: Dallas, TX</div>
-            <div>LinkedIn: <a href="https://linkedin.com/in/sravan-chandaka">linkedin.com/in/sravan-chandaka</a></div>
-        </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At WV Home Services, we are committed to providing top-notch home maintenance solutions. Our experienced team ensures your home is always in perfect condition.</p>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>5 Tips for Maintaining Your HVAC System</h3>
+            <p>Regular maintenance is key to a long-lasting HVAC system. Learn more about our expert tips...</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Common Plumbing Issues and How to Fix Them</h3>
+            <p>Plumbing problems can disrupt your daily routine. Here are some common issues and solutions...</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <section id="business-hours">
+        <h2>Business Hours</h2>
+        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 3:00 PM</p>
+        <p>Sunday: Closed</p>
+    </section>
+
+    <section id="follow-us">
+        <h2>Follow Us</h2>
+        <p>Stay connected with us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </section>
+
+    <section id="request-service">
+        <h2>Request Service</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Service Needed:</label>
+            <select id="service" name="service">
+                <option value="plumbing">Plumbing</option>
+                <option value="hvac">HVAC</option>
+                <option value="electrical">Electrical Maintenance</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="chat">
+        <h2>Let Us Chat</h2>
+        <button onclick="startChat()">Chat with Us</button>
+        <script>
+            function startChat() {
+                alert('Chat functionality coming soon!');
+            }
+        </script>
     </section>
 
     <footer>
-        <p>&copy; 2024 Sravan Chandaka. All rights reserved. | <a href="mailto:chandakasravan@gmail.com">Contact Me</a></p>
+        <p>&copy; 2025 WV Home Services. All rights reserved.</p>
     </footer>
-
 </body>
-
 </html>
